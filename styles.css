@@ -1,33 +1,72 @@
 body {
+    background-color: #f2f4f7;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.login-page {
     background: url("loginbgimg.jpg") no-repeat center center fixed;
     background-size: cover;
-    font-family: Arial, sans-serif;
-    position: relative;
 }
 
 .login-box {
-    background: rgb(255, 255, 255);
-    border-radius: 15px;
+    background: rgba(255,255,255,0.97);
+    border-radius: 20px;
     width: 340px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
     animation: fadeIn 0.5s ease-in-out;
 }
 
 .logo {
-    width: 70px;
-    height: 70px;
-    object-fit: contain;
-    margin-bottom: 10px;
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
     border-radius: 15px;
 }
 
-
-@keyframes fadeIn {
-    from {opacity: 0; transform: translateY(20px);}
-    to {opacity: 1; transform: translateY(0);}
+.navbar {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
+.card,
+.hehe {
+    border-radius: 18px;
+    border: none;
+    transition: 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
 
-button:hover {
-    opacity: 0.9;
+.card:hover,
+.hehe:hover {
+    transform: translateY(-3px);
+}
+
+.btn {
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.hehe {
+    background: white;
+    padding: 20px;
+}
+
+input,
+select {
+    border-radius: 10px !important;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 700;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
