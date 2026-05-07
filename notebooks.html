@@ -1,56 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<link  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<style>
-    .yes {
-    font-family: Gill Sans MT;
-    text-align: center;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: lightblue;
-    border-radius: 15px;}
-</style>
-
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> 4Q Project </title>
 
-    <link rel="stylesheet" href="styles.css"> 
+    <title>4Q Project</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
 
     <style>
 
         .hehe {
             background: transparent;
-            border: solid 1px transparent ;
+            border: solid 1px transparent;
             border-radius: 15px;
-            box-shadow:0 2px 8px rgba(0,0,0,0.15);
-            margin-left: 15px;
-            margin-right: 15px;
-            margin-top: 20px;
-            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            margin: 20px 15px;
             padding: 30px;
-            
         }
 
         .something {
             border: 0px;
-            margin-left: 15px;
-            margin-right: 15px;
-            margin-top: 20px;
-            margin-bottom: 20px;
+            margin: 20px 15px;
         }
 
-        table{
+        .table td,
+        .table tr,
+        .table tbody {
             border: 0px;
-            background: transparent;
-        }
-
-        tr,td {
-            border: 0px;
+            background-color: transparent !important;
         }
 
         img {
@@ -61,18 +44,21 @@
             color: black;
             text-decoration: none;
         }
-        
-        body{
-            font-family:'Courier New', Courier, monospace;
-        }     
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
     </style>
 
 </head>
+
 <body class="container-fluid">
-    
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand"> Student Portal</a>
+
+            <a class="navbar-brand">Student Portal</a>
 
             <div>
                 <a href="dashboard.html" class="btn btn-outline-light">Dashboard</a>
@@ -81,101 +67,97 @@
                 <a href="notebooks.html" class="btn btn-outline-light">Notebooks</a>
                 <a href="index.html" class="btn btn-danger">Logout</a>
             </div>
+
         </div>
     </nav>
-    <div class="container mt-4"></div>
-    
 
-    <h1 style="text-align: center;"> Notebooks </h1>
     <br>
 
-    <div class="table">
+    <h1 class="text-center">Notebooks</h1>
+
+    <br>
+
     <table class="table">
 
-            <tbody>
-                <tr>
-                    <td> 
-                        <a href="#">
-                        <div class="hehe" btn>
-                            <h3> Filipino </h3>
-                            <img src="subject_banner.png" alt="filipino" width=100% height="50%">
-                            <P class="fw-bold" style="color: gray;"> 9-Sapphire 2025-2026 </P>
-                            <br>
-                            <p> Ms. Acosta </p>
-                        </div>
-                        </a>
-                    </td>
+        <tbody>
 
-                    <td> 
-                        <a href="#">
+            <tr>
+
+                <td>
+                    <a href="#">
                         <div class="hehe">
-                            <h3> English </h3>
-                            <img src="subject_banner.png" alt="english" width="100%" height="50%">
-                            <P class="fw-bold" style="color: gray;"> 9-Sapphire 2025-2026 </P>
-                            <br>
-                            <p> Ms. Simbajon </p>
+                            <h3>Filipino</h3>
+                            <img src="subject_banner.png" alt="filipino" width="100%">
+                            <p class="fw-bold text-secondary">9-Sapphire 2025-2026</p>
+                            <p>Ms. Acosta</p>
                         </div>
-                        </a>
-                    </td>
+                    </a>
+                </td>
 
-                    <td>
-                        <a href="#">
+                <td>
+                    <a href="#">
                         <div class="hehe">
-                            <h3> Math </h3>
-                            <img src="subject_banner.png" alt="math" width="100%" height="50%">
-                            <P class="fw-bold" style="color: gray;"> 9-Sapphire 2025-2026 </P>
-                            <br>
-                            <p> Ms. Castro </p>
+                            <h3>English</h3>
+                            <img src="subject_banner.png" alt="english" width="100%">
+                            <p class="fw-bold text-secondary">9-Sapphire 2025-2026</p>
+                            <p>Ms. Simbajon</p>
                         </div>
-                        </a>
-                    </td>
-                </tr>
+                    </a>
+                </td>
 
-
-                <tr>
-                    <td>
-                        <a href="#">
+                <td>
+                    <a href="#">
                         <div class="hehe">
-                            <h3> Science </h3>
-                            <img src="subject_banner.png" alt="science" width="100%" height="50%">
-                            <P class="fw-bold" style="color: gray;"> 9-Sapphire 2025-2026 </P>
-                            <br>
-                            <p> Ms. Aquilino </p>
+                            <h3>Math</h3>
+                            <img src="subject_banner.png" alt="math" width="100%">
+                            <p class="fw-bold text-secondary">9-Sapphire 2025-2026</p>
+                            <p>Ms. Castro</p>
                         </div>
-                        </a>
-                    </td>
+                    </a>
+                </td>
 
-                    <td>
-                        <a href="#">
-                        <div class="hehe">
-                            <h3> Social Studies </h3>
-                            <img src="subject_banner.png" alt="ss" width="100%" height="50%">
-                            <P class="fw-bold" style="color: gray;"> 9-Sapphire 2025-2026 </P>
-                            <br>
-                            <p> Mr. Hablado </p>
-                        </div>
-                        </a>
-                    </td>
+            </tr>
 
-                    <td>
-                        <a href="#">
+            <tr>
+
+                <td>
+                    <a href="#">
                         <div class="hehe">
-                            <h3> Values Education </h3>
-                            <img src="subject_banner.png" alt="ve" width="100%" height="50%">
-                            <P class="fw-bold" style="color: gray;"> 9-Sapphire 2025-2026 </P>
-                            <br>
-                            <p> Ms. Solidum </p>
+                            <h3>Science</h3>
+                            <img src="subject_banner.png" alt="science" width="100%">
+                            <p class="fw-bold text-secondary">9-Sapphire 2025-2026</p>
+                            <p>Ms. Aquilino</p>
                         </div>
-                        </a>
-                    </td>
-                </tr>
-                </tr>
-            </tbody>
-        </table>
-        </div>
+                    </a>
+                </td>
+
+                <td>
+                    <a href="#">
+                        <div class="hehe">
+                            <h3>Social Studies</h3>
+                            <img src="subject_banner.png" alt="ss" width="100%">
+                            <p class="fw-bold text-secondary">9-Sapphire 2025-2026</p>
+                            <p>Mr. Hablado</p>
+                        </div>
+                    </a>
+                </td>
+
+                <td>
+                    <a href="#">
+                        <div class="hehe">
+                            <h3>Values Education</h3>
+                            <img src="subject_banner.png" alt="ve" width="100%">
+                            <p class="fw-bold text-secondary">9-Sapphire 2025-2026</p>
+                            <p>Ms. Solidum</p>
+                        </div>
+                    </a>
+                </td>
+
+            </tr>
+
+        </tbody>
+
     </table>
-    <footer class="text-center p-3 mt-5 text-muted">
-    Group 2 | Grade 9
-</footer>
+
 </body>
 </html>
